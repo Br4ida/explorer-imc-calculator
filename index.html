@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="./main.js" defer></script>
+    <script src="./js/main.js" defer type="module"></script>
   </head>
   <body>
     <div class="alert-error">Digite somente números</div>
@@ -23,12 +23,12 @@
 
           <div class="input-wrapper">
             <label for="weight">Peso (kg)</label>
-            <input id="weight" type="number" placeholder="Peso" />
+            <input id="weight" type="text" placeholder="Peso" />
           </div>
 
           <div class="input-wrapper">
             <label for="height">Altura (cm)</label>
-            <input id="height" type="number" placeholder="Altura" />
+            <input id="height" type="text" placeholder="Altura" />
           </div>
 
           <button class="button" type="submit">
@@ -45,7 +45,7 @@
           <button class="close">
             <img src="./assets/close.svg" alt="Fechar" />
           </button>
-          Seu IMC é de 28
+          <span>Seu IMC é de 28</span>
         </h2>
       </div>
     </div>
